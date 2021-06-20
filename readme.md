@@ -1,3 +1,5 @@
+# Hadoop programs to practice map, reduce with partitioner and combiner.
+
 			
 # Commands to run
 			
