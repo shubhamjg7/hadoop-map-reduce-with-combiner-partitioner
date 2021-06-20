@@ -1,0 +1,14 @@
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLength$TokenizerMapper.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByVowelOrConsonant$IntSumReducer.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByCountInMapCombine.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLength.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLengthPartitioned.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByVowelOrConsonant$TokenizerMapper.class
+com\rmit\student\s3806186\bigdata\Assignment1\Config.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByVowelOrConsonant.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLengthPartitioned$TokenizerMapper.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLengthPartitioned$IntSumReducer.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByCountInMapCombine$TokenizerMapper.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLengthPartitioned$WordLengthPartitioner.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByLength$IntSumReducer.class
+com\rmit\student\s3806186\bigdata\Assignment1\WordByCountInMapCombine$IntSumReducer.class
