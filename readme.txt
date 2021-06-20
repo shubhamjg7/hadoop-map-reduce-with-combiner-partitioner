@@ -1,27 +1,26 @@
-			*****************************
-			****** Commands to run ****** 
-			*****************************
+			
+# Commands to run
+			
 
-To copy standalone jar from HDFS to EMR FS:
-hadoop fs -copyToLocal /user/s3806186/Assignment1-0.0.1-SNAPSHOT.jar .
+### To copy standalone jar from HDFS to EMR FS:
+`hadoop fs -copyToLocal /user/s3806186/Assignment1-0.0.1-SNAPSHOT.jar .`
 
-To run "Count words by lengths" using standalone jar:
-hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByLength /user/s3806186/input/ /user/s3806186/output1 ./
+### To run "Count words by lengths" using standalone jar:
+`hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByLength /user/s3806186/input/ /user/s3806186/output1 ./`
 
-To run "Count words by the first character" using standalone jar:
-hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByVowelOrConsonant /user/s3806186/input/ /user/s3806186/output2 ./
+### To run "Count words by the first character" using standalone jar:
+`hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByVowelOrConsonant /user/s3806186/input/ /user/s3806186/output2 ./`
 
-To run "Count word with in-mapper combining" using standalone jar:
-hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByCountInMapCombine /user/s3806186/input/ /user/s3806186/output3 ./
+### To run "Count word with in-mapper combining" using standalone jar:
+`hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByCountInMapCombine /user/s3806186/input/ /user/s3806186/output3 ./`
 
-To run "Count word with partitioner" using standalone jar:
-hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByLengthPartitioned /user/s3806186/input/ /user/s3806186/output4 ./
+### To run "Count word with partitioner" using standalone jar:
+`hadoop jar Assignment1-0.0.1-SNAPSHOT.jar com.rmit.student.s3806186.bigdata.Assignment1.WordByLengthPartitioned /user/s3806186/input/ /user/s3806186/output4 ./`
 
-			*****************************
-			*** Performance  analysis ***
-			*****************************
 
-Performance analysis using different number of nodes in EMR cluster and one :
+# Performance  analysis
+
+### Performance analysis using different number of nodes in EMR cluster and one :
 	Input file used:
 	s3a://commoncrawl/crawl-data/CC-MAIN-2018-17/segments/1524125936833.6/wet/CC-MAIN-20180419091546-20180419111546-00004.warc.wet.gz
 
@@ -43,7 +42,7 @@ Performance analysis using different number of nodes in EMR cluster and one :
 		REDUCE	: 2986
 		TOTAL	: 133824
 		
-Analysis:
+### Explanation for the results:
 
 For analysis the input file available at "s3a://commoncrawl/crawl-data/CC-MAIN-2018-17/segments/1524125936833.6/wet/CC-MAIN-20180419091546-20180419111546-00004.warc.wet.gz" was used. 
 I extracted the file and used it as input for a map-reduce program which counts number of words of lengths between 1-4, 5-7, 8-10 and >11 in the file. 
